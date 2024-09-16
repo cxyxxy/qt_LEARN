@@ -12,6 +12,8 @@ class QtWidgetsApplication1 : public QMainWindow
 public:
     QtWidgetsApplication1(QWidget *parent = Q_NULLPTR);
 
+    void test_timer_learn();
+
 private:
     Ui::QtWidgetsApplication1Class ui;
 

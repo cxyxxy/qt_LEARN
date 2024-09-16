@@ -17,5 +17,11 @@ QtWidgetsApplication1::QtWidgetsApplication1(QWidget *parent)
     learn_timer_pushbutton->setText(QString::fromLocal8Bit("定时器"));
     connect(learn_timer_pushbutton, &QPushButton::clicked, learn_timer_widget, &QWidget::show);
 
-    //
+    //定时器相关注释与代码
+    test_timer_learn();
+}
+
+void QtWidgetsApplication1::test_timer_learn()
+{
+
 }
