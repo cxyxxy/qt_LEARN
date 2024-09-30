@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desktop_pets", "Desktop_pets.vcxproj", "{10725380-1436-4CCA-B842-1DE644ADBC1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10725380-1436-4CCA-B842-1DE644ADBC1A}.Debug|x64.ActiveCfg = Debug|x64
+		{10725380-1436-4CCA-B842-1DE644ADBC1A}.Debug|x64.Build.0 = Debug|x64
+		{10725380-1436-4CCA-B842-1DE644ADBC1A}.Release|x64.ActiveCfg = Release|x64
+		{10725380-1436-4CCA-B842-1DE644ADBC1A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B90DA56E-9827-40DC-89FC-39454FB1A7A7}
+	EndGlobalSection
+EndGlobal
