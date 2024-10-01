@@ -23,6 +23,7 @@
 
 
 #include "ui_desktop_pets.h"
+#include "settingwidget.h"
 
 class Desktop_pets : public QMainWindow
 {
@@ -30,7 +31,7 @@ class Desktop_pets : public QMainWindow
 
 public:
     Desktop_pets(QWidget *parent = Q_NULLPTR);
-
+    ~Desktop_pets();
 
 protected:
     void mousePressEvent(QMouseEvent* event) override;
@@ -43,8 +44,14 @@ protected:
     void eyesMovement();//眼部动作表情
     void specialMovement();//特殊动作事件
     void saveData();//存储数据
-
-
+    void initBtn();//初始化按钮
+    void reInitBtn();//修改大小时再次初始化按钮
+    void closePets();//点击关闭按钮事件
+    void min();//点击最小化按钮事件
+    void setting();//点击设置按钮事件
+    void btnSwitchRole();//根据btnSwitch切换按钮状态
+    void initSystemTray();//初始化系统托盘
+    void systemTrayShow();//点击系统托盘事件
 
 private:
     Ui::Desktop_petsClass ui;
@@ -72,7 +79,16 @@ private:
     QLabel* m_earsImage;
     QLabel* m_eyesImage;
     QLabel* m_stripeImage;
+    int m_btnSwitch1, m_btnSwitch2;//菜单按钮显示开关
+    int m_btnSize;//按钮大小
+    QPushButton* m_closeBtn;//关闭按钮
+    //QPushButton* dressBtn;//换装按钮
+    //QPushButton* moreBtn;//展开更多按钮
+    QPushButton* m_minBtn;//最小化按钮
+    QPushButton* m_setBtn;//设置按钮
+    QSystemTrayIcon* m_systemTray;//系统托盘
 
+    SettingWidget* m_settingWidget;//设置窗口指针
 
 };
 
